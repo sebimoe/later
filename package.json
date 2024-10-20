@@ -1,0 +1,64 @@
+{
+  "name": "later",
+  "version": "1.0.0",
+  "description": "A small library for universally waiting.",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm-run-all clean build:cjs build:esm",
+    "build:esm": "tsup src/index.ts --format esm --legacy-output",
+    "build:cjs": "tsup src/index.ts --format cjs --dts",
+    "clean": "rimraf dist",
+    "test": "uvu -r ts-node/register tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebimoe/later.git"
+  },
+  "keywords": [
+    "delay",
+    "wait",
+    "later",
+    "timeout",
+    "interval",
+    "promise",
+    "schedule",
+    "scheduler",
+    "es6",
+    "node",
+    "browser"
+  ],
+  "author": "sebimoe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebimoe/later/issues"
+  },
+  "homepage": "https://github.com/sebimoe/later#readme",
+  "devDependencies": {
+    "@types/readable-stream": "^4.0.15",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3",
+    "uvu": "^0.5.6"
+  },
+  "dependencies": {
+  }
+}
