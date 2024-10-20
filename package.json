@@ -1,5 +1,5 @@
 {
-  "name": "later",
+  "name": "later-p",
   "version": "1.0.0",
   "description": "A small library for universally waiting.",
   "main": "dist/index.js",

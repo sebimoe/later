@@ -1,4 +1,4 @@
-# `later` [github](https://github.com/sebimoe/later), [npm](https://www.npmjs.com/package/later)
+# `later-p` (`later`) [github](https://github.com/sebimoe/later-p), [npm](https://www.npmjs.com/package/later-p)
 
 A simple to use and small but versatile scheduling library for JavaScript, compatible with both Node.js and browser, providing multiple ways to defer tasks. 
 
@@ -13,7 +13,7 @@ Ideal for both developers and library authors looking to integrate flexible dela
 ## Installation
 
 ```bash
-npm install later
+npm install later-p
 ```
 
 ## Usage Summary
